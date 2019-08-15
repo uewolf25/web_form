@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+      <?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?>
+     <title>テスト</title>
+  </head>
+  <body>
+    <div>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfsklOJ9LvIQAlWniWhJZMxUV1s6uLki7_y_HjAoQMBk10_8Q/formResponse">
+        <div><label for="name">名前</label></div>
+        <div><input id="name" type="text" name="entry.1482290792" placeholder="電子 太郎" required></div>
+        
+        <div><label for="email">メールアドレス</label></div>
+        <div><input id="email" type="text" name="entry.798217618" placeholder="<?=mail ?>" required></div>
+        
+        <div><label for="msg">このサービスについて</label></div>
+        <div><textarea id="msg" name="entry.349912049" placeholder="入力せよ" required></textarea></div>
+        
+        <div><input type="radio" value="ありよりのあり" name="entry.1898673506" aria-checked="false" checked><label for="ありあり">ありよりのあり</label></div>
+        <div><input type="radio" value="ありよりのなし" name="entry.1898673506" required><label for="ありなし">ありよりのなし</label></div>
+        <div><input type="radio" value="なしよりのあり" name="entry.1898673506"><label for="ありなし">なしよりのあり</label></div>
+        <div><input type="radio" value="なしよりのなし" name="entry.1898673506"><label for="ありなし">なしよりのなし</label></div>
+        <div><input type="radio" value="ありよりのよし（それは有吉やないかいっ！）" name="entry.1898673506"><label for="ありなし">ありよりのよし（それは有吉やないかいっ！）</label></div>
+     
+        
+        <div><button type="submit" name="button" value="送信">送　信</button></div>
+      </form>
+    </div>
+  </body>
+</html>
+
+
